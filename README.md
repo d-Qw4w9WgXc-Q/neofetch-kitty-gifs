@@ -23,3 +23,9 @@ Neofetch supports almost 150 different operating systems. From Linux to Windows,
 
 
 ### More: \[[Dependencies](https://github.com/dylanaraps/neofetch/wiki/Dependencies)\] \[[Installation](https://github.com/dylanaraps/neofetch/wiki/Installation)\] \[[Wiki](https://github.com/dylanaraps/neofetch/wiki)\]
+
+
+---
+# Gifs
+
+All this fork does is remove a few lines from the code that add a .png extension to a few file formats, including gifs, making it so they don't work properly. I don't know why those lines where there but removing them doesn't seem to cause any problem, at least with more "conventional" file formats and makes it so gifs work properly, at least with the kitty backend
