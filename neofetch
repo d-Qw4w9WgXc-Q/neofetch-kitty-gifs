@@ -4365,11 +4365,12 @@ make_thumbnail() {
     image_name="${crop_mode}-${crop_offset}-${width}-${height}-${image//\/}"
 
     # Handle file extensions.
-    # case ${image##*.} in
-    #     "eps"|"pdf"|"svg"|"gif"|"png")
-    #         image_name+=".png" ;;
-    #     *)  image_name+=".jpg" ;;
-    # esac
+    case ${image##*.} in
+        "eps"|"pdf"|"svg"|"png")
+            image_name+=".png" ;;
+	"gif") ;;
+        *)  image_name+=".jpg" ;;
+    esac
 
     # Create the thumbnail dir if it doesn't exist.
     mkdir -p "${thumbnail_dir:=${XDG_CACHE_HOME:-${HOME}/.cache}/thumbnails/neofetch}"
